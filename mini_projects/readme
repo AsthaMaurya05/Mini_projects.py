@@ -1,0 +1,78 @@
+🧠 VAK Learning Style Quiz (Mini Project)
+📌 Overview
+
+The VAK Learning Style Quiz is a simple and interactive web application built using Python and Streamlit.
+It helps users identify their dominant learning style:
+
+👀 Visual
+
+👂 Auditory
+
+✋ Kinesthetic
+
+The quiz is based on the VAK (Visual–Auditory–Kinesthetic) learning model and contains 30 carefully designed questions.
+
+This project was created as my first mini project during my Python Full Stack Development class 🚀.
+
+🎯 Features
+
+Interactive quiz with 30 multiple-choice questions
+
+Clean and user-friendly UI using Streamlit
+
+Calculates percentage scores for:
+
+Visual
+
+Auditory
+
+Kinesthetic
+
+Displays personalized results based on user responses
+
+Beginner-friendly Python logic
+
+🛠️ Tech Stack
+
+Python
+
+Streamlit
+
+Basic HTML/CSS (via Streamlit markdown)
+
+📂 Project Structure
+VAK-Quiz/
+│
+├── app.py        # Main Streamlit application file
+├── README.md     # Project documentation
+
+▶️ How to Run the Project
+
+1️⃣ Install Required Library
+pip install streamlit
+
+2️⃣ Run the Application
+streamlit run app.py
+
+3️⃣ Open in Browser
+
+Streamlit will automatically open the app in your browser.
+
+
+🧪 How It Works
+
+User enters their name
+
+Answers 30 quiz questions
+
+Each answer increases the score of:
+
+Visual (V)
+
+Auditory (A)
+
+Kinesthetic (K)
+
+Final scores are converted into percentages
+
+The dominant learning style is shown based on results
