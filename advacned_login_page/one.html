@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Login Page</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+        }
+
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('img5.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        div{
+            border: 2px;
+            padding: 5px; 
+            border-radius: 15px;
+            margin:5px;
+        }
+
+        .header{
+            width: 95%;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .login_form{
+            width: 400px;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 80px;
+            opacity: 0.9;
+            box-shadow: 0 4px 10px rgb(196, 175, 175)
+        }
+    </style>    
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <div style="border:none">Don't have an account?</div>
+            <div style="padding:10px;border:2px solid white">Create your account</div> 
+        </div>    
+            
+        <div class="login_form" >
+            <h1 style="font-size:40px;">Login Here</h1>
+
+            <form style="width:100%; justify-content: right; align-items: right;text-align: left;">
+                <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" placeholder="john@example.com"
+                    style="width:100%; padding:10px;margin-top:5px"><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="Enter your password"
+                    style="width:100%; padding:10px;margin-top:5px"><br><br>
+                </div>
+                <div style="text-align: right;margin-bottom:20px;">    
+
+                <button type="submit "
+                    style="width:30%; padding:10px; background-color:#ee921b;
+                    border:none; border-radius:10px; font-weight:bold;opacity:0.8">
+                    LOGIN
+                </button>
+                </div>
+            </form> 
+
+            <div style="display:flex; gap:10px; border:none; margin-top:15px;">
+                <div style = "background-color:brown;padding:10px;opacity:0.7">Login with G</div>
+                <div style = "background-color:brown;padding:10px;opacity:0.7">Login with F</div>
+            </div>      
+        </div>
+    </main>    
+</body>
+</html>
