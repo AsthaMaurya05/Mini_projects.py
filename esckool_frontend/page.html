@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESCKOOL</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100vh;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        div {
+            
+            border: 1px solid white ;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            justify-content: center;
+        }
+
+        .container {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            width: 15%;
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            font-size: 0.85rem;
+        }
+
+        .dashboard {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+        }
+
+        
+
+        .to-do {
+            width: 20%;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 0.85rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p{
+            color:grey
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container" style="display: flex; flex-direction: row;">
+
+    <div class="sidebar" style="background-color:rgb(42, 42, 248);color:white;box-shadow: 2px 2px 5px rgb(222, 223, 223); justify-content:right; align-items:right; padding:10px;">
+        <h2 >ESCKOOL</h2><br><br><br>
+        <ul >
+            <li><a href="#" style="color:white; font-weight:bold;font-size:1rem;">Dashboard</a></li><br><br>
+            <li><a href="#" style="color:white;font-weight:bold;font-size:1rem;">Courses</a></li><br><br>
+            <li><a href="#" style="color:white;font-weight:bold;font-size:1rem;">Profile</a></li><br><br>
+            <li><a href="#"style="color:white;font-weight:bold;font-size:1rem;">Settings</a></li><br><br>
+            <li><a href="#" style="color:white;font-weight:bold;font-size:1rem;">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="header" style=" flex-direction:row; margin-left:15px; margin-right:15px; box-shadow: 2px 2px 5px rgb(222, 223, 223); padding:0px;border:1px solid rgb(250, 243, 248)">
+            <div class="right" style="width: 70%; margin:0px">
+                <h1 style="font-size:2.5rem;">Welcome to ESCKOOL Dashboard</h1><br>
+                <h1>Your Profile</h1><br>
+                <p>Hi User, welcome to your dashboard.</p>
+            </div>
+
+            <div class="left" style="width: 30%;margin:0px">
+                <img src="im5.jpg" alt="profile" width="200px" height="100px" style="object-fit: cover;">
+                
+            </div>
+        </div>
+
+        <div class="middle" style="flex:1; margin-left:15px; margin-right:15px; box-shadow: 2px 2px 5px rgb(222, 223, 223);border:1px solid rgb(250, 243, 248)">
+            <h2>Your Assignments</h2>
+            
+            <div class="assignments" style="flex-direction:row;height:190px; ">
+                <div style="flex:1; text-align: center;align-items: center; background-color:rgb(240, 239, 245);margin:10px;box-shadow: 2px 2px 5px rgb(222, 223, 223)">
+                    <h3>Math Assignment</h3>
+                    <p>Multiple Choice Questions</p><br>
+                    <img src="mat.jpg" alt="math" width="20%" height="20%" style="object-fit: cover; border-radius: 50%;"><br>
+                    <p style="font-size: 0.85rem;">Due Date: 2024-07-10</p>
+                </div>
+                <div style="flex:1; text-align: center;align-items: center;background-color:rgb(240, 239, 245);margin:10px;box-shadow: 2px 2px 5px rgb(222, 223, 223)">
+                    <h3>English Lesson 2</h3>
+                    <p>Question and Answers</p><br>
+                    <img src="eng.jpg" alt="math" width="20%" height="20%" style="object-fit: cover; border-radius: 50%;"><br>
+                    <p style="font-size: 0.85rem;">Due Date: 2024-07-15</p>
+                </div>
+                <div style="flex:1; text-align: center;align-items: center;background-color:rgb(240, 239, 245);margin:10px;box-shadow: 2px 2px 5px rgb(222, 223, 223)">
+                    <h3>Science</h3>
+                    <p>Complete chapter 2</p><br>
+                    <img src="sci.jpg" alt="math" width="20%" height="20%" style="object-fit: cover; border-radius: 50%;"><br>
+                    <p style="font-size: 0.85rem;">Due Date: 2024-07-15</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom" style="flex:1; margin-left:15px; margin-right:15px; box-shadow: 2px 2px 5px rgb(222, 223, 223);border:1px solid rgb(250, 243, 248)">
+            <h2>Lessons for you</h2>
+            <div class="lessons" style="display:flex; flex-direction:row; height:170px;">
+                <div style="flex:1; flex-direction: row; background-color:#f8be2c;" >
+                    <div style="flex:1; padding:20px; color:white; border:none">
+                    <h3  style="text-align: left;align-items: left;">Focus Words</h3><br>
+                    <p style="font-size: 1rem; color:white">English</p>
+                    </div>
+                    <img src="im3.jpg" alt="focus words" width="35%" height="35%" style="object-fit: cover; border-radius: 10px;">
+                </div>
+                <div style="flex:1; flex-direction: row; background-color:#f65867;">
+                    <div style="flex:1; color:white;padding:20px; border:none">
+                    <h3 style="text-align: left;align-items: left;">Workshop</h3><br>
+                    <p style="font-size: 1rem; color:white">Extracurricular</p>
+                    </div>
+                    
+                        <img src="im4.jpg" alt="workshop" width="35%" height="35%" style="object-fit: cover; border-radius: 10px;">
+                       
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="to-do">
+        <div style="flex:1 ; width:95%; align-items:center; box-shadow: 2px 2px 5px rgb(222, 223, 223);border:1px solid rgb(250, 243, 248)">
+            <img src="im1.png" alt="calendar" width="100%" height="100%">
+        </div>
+
+        <div style="flex:1 ; width:95%; align-items:center; box-shadow: 2px 2px 5px rgb(222, 223, 223);border:1px solid rgb(250, 243, 248)">
+            <h3>Your Tasks Today</h3><br>
+                <div style=" align-items:left;">
+                <li >Complete Math Assignment</li>
+                <li >Review Science Notes</li>
+                <li >Practice Coding Exercises</li>
+                </div>
+                <br>
+            
+            <button style="width: 60%; border-radius: 20px;background-color:white;color:blue;border:1px solid blue;">Create New</button>
+        </div>
+
+        <div class="refer" style = "justify-content: center;text-align: center; box-shadow: 2px 2px 5px rgb(222, 223, 223);border:1px solid rgb(250, 243, 248)  ">
+            <h4>Refer a friend</h4>
+            <img src="refer.jpg" alt="refer" width="100%" height="100%">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
