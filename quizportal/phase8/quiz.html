@@ -1,0 +1,140 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                border: 1px ;
+                margin:5px;
+                padding: 10px;
+            }
+            
+            #qsbox,#optbox{
+               flex:1;
+               
+            }
+            .options{
+               margin:10px;
+               padding:10px;
+               border: 1px solid #d9d9d9;
+               box-shadow: 1px 1px 5px rgb(77, 76, 76);
+               background-color: #f3f7f1;
+               border-radius: 10px;
+           }
+           
+           .navqs:hover{
+               box-shadow: 0 0 30px rgba(0,0,0,0.3);
+               transform: scale(1.03);
+               transition:0.3s;
+           }
+
+           .navqs.answered {
+               background-color: #28a745; /* green */
+               color: white;
+               font-weight: bold;
+           }
+
+           .navqs.review {
+               background-color: #dc3545; /* red */
+               color: white;
+               font-weight: bold;
+           }
+
+           .navqs.active {
+               background-color: #0097b2;
+               color: white;
+               font-weight: bold;
+           }
+
+
+            button {
+                cursor: pointer;
+                transition: 
+                transform 0.1s ease,
+                box-shadow 0.1s ease,
+                opacity 0.1s ease;
+            }
+
+
+            button:active {
+                transform: scale(0.94);
+                box-shadow: inset 0 3px 6px rgba(0,0,0,0.35);
+                opacity: 0.9;
+            }
+           h3{
+            color : rgb(11, 72, 5);
+           }
+
+           .navqs{
+            background-color: rgb(237, 243, 200);
+           }
+
+            
+        </style>    
+
+    </head>
+    <body style="font-family: 'Times New Roman', Times, serif;" bgcolor="#f3f7f1">
+        <main>
+            <div style="display: flex; justify-content: space-between; border-bottom:3px solid rgba(11, 72, 5,0.3); align-items:center;">
+                <div class="subject" style="font-weight: bold; padding:2px; margin:0px"><h3>Phase 8: Exception Handling & File Handling Quiz</h3></div>
+                <div id="timer" class="time" style="box-shadow: 0 0 5px rgb(150, 150, 153); height: 25px;display:flex;justify-content:center;align-items:center; border-radius:5px;"><h3 style="color:rgb(248, 80, 68)">00 : 00 : 00</h3></div>
+                <div><button id="submitbtn" style="background-color:rgb(248, 80, 68); color:#f3f7f1; border-radius:5px; font-size:16px;padding:6px;height:40px">End Test</button></div>
+            </div>
+
+            <div id="content" style="display: flex; height: 480px;">
+                <div id="qsbox" class="qs" style="flex: 1;box-shadow: 1px 1px 5px rgb(77, 76, 76);border-radius: 10px; "> 
+                    
+                </div>
+                <div id = "optbox"style="flex: 1; margin:10px;padding:10px;">
+                    
+                </div>
+            </div>
+
+            <div id = "question-number" class="nav" style="display: flex; flex-wrap: wrap; border: 2px dashed rgb(11, 72, 5); justify-content: center;">
+                <div class="navqs" id="q1"style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">1</div>
+                <div class="navqs" id ="q2" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">2</div>
+                <div class="navqs" id="q3" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >3</div>
+                <div class="navqs" id="q4" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">4</div>
+                <div class="navqs" id="q5" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">5</div>
+                <div class="navqs" id="q6" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">6</div>
+                <div class="navqs" id="q7" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">7</div>
+                <div class="navqs" id="q8" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">8</div>
+                <div class="navqs" id="q9" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">9</div>
+                <div class="navqs" id="q10" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">10</div>
+                <div class="navqs" id="q11" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">11</div>
+                <div class="navqs" id="q12" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">12</div>
+                <div class="navqs" id="q13" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">13</div>
+                <div class="navqs" id="q14" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">14</div>
+                <div class="navqs" id="q15" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">15</div>
+                <div class="navqs" id="q16" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">16</div>
+                <div class="navqs" id="q17" style="flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">17</div>
+                <div class="navqs" id="q18" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">18</div>
+                <div class="navqs" id="q19" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">19</div>
+                <div class="navqs" id="q20" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">20</div>
+                <div class="navqs" id="q21" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">21</div>
+                <div class="navqs" id="q22" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">22</div>
+                <div class="navqs" id="q23" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)">23</div>
+                <div class="navqs" id="q24" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >24</div>
+                <div class="navqs" id="q25" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >25</div>
+                <div class="navqs" id="q26" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >26</div>
+                <div class="navqs" id="q27" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >27</div>
+                <div class="navqs" id="q28" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >28</div>
+                <div class="navqs" id="q29" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >29</div>
+                <div class="navqs" id="q30" style = "flex:1; box-shadow: 0 0 5px rgb(150, 150, 153)" >30</div>
+            </div>
+            <div id="footer" style="display:flex; justify-content:space-between; padding-right:20px; padding-left:20px">
+                <button id="prevbtn" style="background-color:rgb(11, 72, 5); font-size:16px; padding:6px;border-radius:5px; border:none; color:#f3f7f1;">Previous Question</button>
+                <button id="markbtn" style="background-color:#f3f7f1; font-size:16px; padding:6px;border-radius:5px; border:none; color:rgb(11, 72, 5); box-shadow: 0 0 5px rgb(150, 150, 153);">Mark for Review</button>
+                <button id="nextbtn" style="background-color:rgb(11, 72, 5); font-size:16px; padding:6px;border-radius:5px; border:none; color:#f3f7f1;">Next Question</button>
+
+            </div>        
+        </main>
+
+    </body>
+
+    
+        <script src="quiz.js"></script>
+</html>            

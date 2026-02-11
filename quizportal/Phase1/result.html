@@ -1,0 +1,55 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Page</title>
+    <style>
+        div{
+            margin:5px;
+            padding:10px;
+            border: 2px;
+        }
+        h1{
+            color:rgb(19, 170, 19);
+            font-size: 36px;
+        }
+        h3{
+            color:rgb(11, 72, 5);
+            font-size: 24px;
+        }
+        h4{
+            color:rgb(43, 40, 40);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;" bgcolor="#f3f7f1">
+<main>
+    <div style="text-align:center; display:flex; flex-direction:column; align-items:center; padding:100px"> 
+        <div>
+            <img src="/quizportal/images/tick.webp" style="height:150px; width:150px">
+        </div>
+
+        <h1>Submitted</h1>
+
+        <h3 id="scoreDisplay">Loading score...</h3>
+
+        <h4><a href="/quizportal/home.html">Back to home</a></h4>
+    </div>
+</main>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get("score");
+    const total = params.get("total");
+
+    if (score !== null && total !== null) {
+        document.getElementById("scoreDisplay").innerHTML =
+            `Your Final Score is: <strong>${score} / ${total}</strong>`;
+    } else {
+        document.getElementById("scoreDisplay").innerText =
+            "Score not found.";
+    }
+</script>
+</body>
+</html>

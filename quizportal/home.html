@@ -1,0 +1,120 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Portal</title>
+        <style>
+            div{
+                margin:5px;
+                padding:10px;
+                border: 2px ;
+            }
+            p{
+                color:rgb(58, 85, 55);
+                font-size:17px;
+            }
+            h1{
+                color:rgb(11, 72, 5);
+                text-shadow: 2px 2px 5px rgb(77, 76, 76);
+                
+                font-size:60px; 
+                padding:0px;
+            }
+            
+        
+            a{
+                font-weight:bold;
+                color:rgb(11, 72, 5);
+
+            }
+            .topic{
+                background-color: rgb(237, 243, 200);
+                padding: 15px;
+                margin: 10px;
+                
+                box-shadow: 2px 2px 10px rgb(77, 76, 76);
+                border-radius: 10px;
+            }
+            @media screen and (min-width: 768px) {
+
+                #content{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                }
+            }
+        </style>    
+    </head>
+    <body style="font-family: 'Times New Roman', Times, serif;" bgcolor="#f3f7f1">
+        <main>
+            <div id="header" style="text-align:center; padding:0px; border-bottom:3px solid rgba(11, 72, 5,0.3); "  ><h1>Python Quiz Portal</h1></div>
+            
+            <div>
+                <p style = "padding:15px;">Python Quiz Portal is a phase-wise practice platform designed to strengthen Python fundamentals through structured, concept-focused quizzes.
+                     Instead of random questions, quizzes are organized in learning phases — from core basics to advanced Python concepts — helping learners build clarity step by step. 
+                     <br><br>Each quiz contains carefully curated MCQs inspired by real exam patterns, interview questions, and common trap areas. 
+                     Whether you are a beginner or preparing for placements, this portal helps you test your understanding, identify weak areas, and improve Python confidence through consistent practice.</p>
+
+
+                <div class="content" id="content">
+                    
+                    <div class="topic" >
+                        <a href="/quizportal/Phase1/quizhome.html">Phase 1: Python Core Foundations Quiz</a>
+                        <p>This quiz focuses on Python fundamentals such as syntax, indentation, variables, keywords, identifiers, and dynamic typing. 
+                            It helps build strong concept clarity and covers questions frequently asked in MCQs and entrance tests.
+                        </p>
+
+                        
+                    </div>
+                  
+                    <div class="topic">
+                        <a href="/quizportal/phase2/quizhome.html">Phase 2: Python Data Types & Data Handling Quiz</a>
+                        <p>Covers Python’s built-in data types including numbers, strings, lists, tuples, sets, and dictionaries. 
+                            Special emphasis is given to mutable vs immutable concepts, indexing, slicing, and common MCQ-based logic traps.
+                        </p>
+                    </div>
+                    <div class="topic" >
+                        <a href="/quizportal/phase3/quizhome.html">Phase 3: Operators & Expressions Quiz</a>
+                        <p>This quiz tests your understanding of arithmetic, relational, logical, assignment, and bitwise operators. 
+                            Operator precedence and expression evaluation questions are a major focus, making it ideal for exam preparation.
+                        </p>
+                    </div>
+                    <div class="topic" >
+                        <a href="/quizportal/phase4/quizhome.html">Phase 4: Control Flow & Loops Quiz</a>
+                        <p>Designed to strengthen decision-making and looping logic using if-else conditions, for and while loops, break, continue, pass, and loop-else concepts. 
+                            This phase contains many MCQ-favorite patterns.
+                        </p>
+                    </div>
+                    <div class="topic" >
+                        <a href="/quizportal/phase5/quizhome.html"> Phase 5: Functions & Recursion Quiz</a>
+                        <p>Focuses on function creation, arguments, return values, default parameters, *args, **kwargs, and recursion basics.
+                             Helps learners understand how logic is broken into reusable blocks.
+                        </p>     
+                    </div>
+                    <div class="topic" >
+                        <a href="/quizportal/phase6/quizhome.html">Phase 6: Advanced Python Concepts Quiz</a>
+                        <p>Covers Python’s advanced and tricky topics such as list and dictionary comprehensions, 
+                            lambda functions, map/filter/reduce, shallow vs deep copy, memory references, and the id() function — common exam trap areas.
+                        </p>
+                    </div>
+                    <div class="topic" >
+                        <a href="/quizportal/phase7/quizhome.html"> Phase 7: OOPS in Python Quiz</a>
+                        <p>Tests object-oriented programming concepts including classes, objects, constructors, 
+                            inheritance, polymorphism, encapsulation, and important dunder methods like str and len.
+                        </p>
+                    </div>
+                    
+                    <div class="topic" >
+                        <a href="/quizportal/phase8/quizhome.html"> Phase 8: Exception Handling & File Handling Quiz</a>
+                        <p>This quiz focuses on error handling using try-except blocks, custom exceptions, 
+                            and file operations such as reading, writing, appending, and file modes — essential for real-world Python usage.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </main>   
+
+    </body>    
+</html>
