@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🗺️ Pathfinding Visualizer</h1>
+    <p class="subtitle">Draw walls, set start/end points, and watch BFS or DFS find the path.</p>
+  </header>
+
+  <main>
+
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <!-- Algorithm selector -->
+      <select id="algo-select">
+        <option value="bfs">BFS — Breadth-First Search</option>
+        <option value="dfs">DFS — Depth-First Search</option>
+      </select>
+
+      <!-- Mode buttons -->
+      <button id="btn-wall"  class="mode-btn active" data-mode="wall">✏️ Draw Walls</button>
+      <button id="btn-start" class="mode-btn"        data-mode="start">🟢 Move Start</button>
+      <button id="btn-end"   class="mode-btn"        data-mode="end">🔴 Move End</button>
+
+      <!-- Action buttons -->
+      <button id="btn-run"        class="run-btn">▶ Run</button>
+      <button id="btn-clear-path" class="secondary-btn">Clear Path</button>
+      <button id="btn-reset"      class="danger-btn">Reset Grid</button>
+    </div>
+
+    <!-- MODE HINT -->
+    <p id="mode-hint" class="mode-hint">Click or drag to draw walls.</p>
+
+    <!-- LEGEND -->
+    <div class="legend">
+      <div class="legend-item"><span class="dot start"></span>   Start</div>
+      <div class="legend-item"><span class="dot end"></span>     End</div>
+      <div class="legend-item"><span class="dot wall"></span>    Wall</div>
+      <div class="legend-item"><span class="dot visited"></span> Visited</div>
+      <div class="legend-item"><span class="dot path"></span>    Shortest Path</div>
+    </div>
+
+    <!-- GRID -->
+    <div id="grid-container">
+      <div id="grid"></div>
+    </div>
+
+    <!-- STATS -->
+    <div id="stats"></div>
+
+  </main>
+
+  <!-- Load JS modules in order -->
+  <script src="js/grid.js"></script>
+  <script src="js/bfs.js"></script>
+  <script src="js/dfs.js"></script>
+  <script src="js/visualizer.js"></script>
+
+</body>
+</html>
