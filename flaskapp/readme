@@ -1,0 +1,129 @@
+# 📝 Flask To-Do List Web App
+
+A simple yet practical **To-Do List web application** built using **Flask** as part of my **PEP Python Full Stack classes**.
+This project helped me understand how frontend and backend communicate in a real web application using Flask.
+
+---
+
+## 🚀 Project Overview
+
+The Flask To-Do List App allows users to:
+
+* Add new tasks
+* View all tasks dynamically
+* Delete tasks
+* Store data persistently using a database
+
+It focuses on understanding the **core Flask workflow**, rather than heavy UI or complex features.
+
+---
+
+## ✨ Features
+
+* ➕ Add new tasks with description
+* ❌ Delete existing tasks
+* 🗂 Persistent storage using SQLite
+* 🔄 Dynamic rendering with Jinja2 templates
+* 🧭 Clean and simple UI
+
+---
+
+## 🛠 Tech Stack
+
+* **Python** – Backend logic
+* **Flask** – Web framework
+* **HTML5** – Structure
+* **CSS3** – Styling
+* **SQLite** – Database
+* **SQLAlchemy** – ORM for database operations
+* **Jinja2** – Template engine
+
+---
+
+## 📂 Project Structure
+
+```text
+flaskapp/
+│
+├── instance/
+│   └── tasks.db           # SQLite database
+│
+├── templates/
+│   └── home.html          # Main UI template
+│
+├── static/                # Static files (CSS, assets)
+│
+├── venv/                  # Virtual environment (not pushed to GitHub)
+│
+├── wsgi.py                # Main Flask application
+└── requirements.txt       # Dependencies (optional)
+```
+
+---
+
+## ▶️ How to Run the Project
+
+1. Create & activate virtual environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
+
+2. Install dependencies
+
+```bash
+pip install flask flask-sqlalchemy
+```
+
+3. Run the Flask app
+
+```bash
+python wsgi.py
+```
+
+4. Open browser and visit:
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+## 🧠 Key Learnings
+
+* Handling **GET & POST** requests in Flask
+* Connecting HTML forms with backend logic
+* Using **Flask-SQLAlchemy** for database operations
+* Understanding Flask request–response lifecycle
+* Rendering dynamic data using **Jinja2 templates**
+
+---
+
+## 🎯 Purpose of This Project
+
+This project was built to:
+
+* Apply Flask concepts practically
+* Strengthen backend fundamentals
+* Understand how data flows from UI to database
+* Build confidence in full stack development
+
+---
+
+## 🔮 Future Improvements
+
+* Edit task functionality
+* Task completion status
+* User authentication
+* Better UI styling
+* Deployment on cloud platform
+
+---
+
+## 🙌 Conclusion
+
+This Flask To-Do List App marks my **first hands-on backend web project using Flask**.
+It laid a strong foundation for understanding full stack development and motivated me to build more real-world projects.
+
+🚀 *Learning by building, one project at a time.*
