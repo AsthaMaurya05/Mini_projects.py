@@ -85,3 +85,6 @@ python -m http.server 8000
 | `bfs.js` | Queue, BFS traversal, parent map |
 | `dfs.js` | Stack, DFS traversal, backtracking |
 | `visualizer.js` | setTimeout animation, event listeners, path reconstruction |
+
+
+## Live :  https://miniprojectspy.vercel.app/ 
